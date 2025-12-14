@@ -35,6 +35,25 @@
       font-size: 18px;
       color: #3F2938;
     }
+
+    .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.card {
+  background: #111827;
+  padding: 24px;
+  border-radius: 16px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
   </style>
 </head>
 
@@ -53,9 +72,24 @@
     </p>
 
     <h2>Projects</h2>
-    <p>
-      You’ll list your work here.
-    </p>
+
+<div class="cards">
+  <div class="card">
+    <h3>Project One</h3>
+    <p>Short description of the project.</p>
+  </div>
+
+  <div class="card">
+    <h3>Project Two</h3>
+    <p>Short description of the project.</p>
+  </div>
+
+  <div class="card">
+    <h3>Project Three</h3>
+    <p>Short description of the project.</p>
+  </div>
+</div>
+
   </section>
 
 </body>
